@@ -9,9 +9,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@300;400;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/tokens.css?v=8">
-<link rel="stylesheet" href="css/styles.css?v=8">
-<link rel="stylesheet" href="css/home.css?v=8">
+<link rel="stylesheet" href="css/tokens.css?v=9">
+<link rel="stylesheet" href="css/styles.css?v=9">
+<link rel="stylesheet" href="css/home.css?v=9">
 </head>
 <body class="home">
 
@@ -449,16 +449,46 @@
     </div>
   </section>
 
-  <!-- ============ CTA ============ -->
+  <!-- ============ CTA / CONTACT ============ -->
   <section class="cta" id="contact">
-    <div class="cta__content">
-      <span class="cta__label" data-reveal>(06) — Contact</span>
-      <h2 class="cta__title" data-reveal style="--d:.08s">Let's advance,<br>together<em>.</em></h2>
-      <p class="cta__sub" data-reveal style="--d:.16s">Talk to our specialists about instruments, reagents, service and long-term partnership.</p>
-      <div data-reveal style="--d:.24s">
-        <a href="mailto:hello@elincou.com" class="el-btn el-btn--primary el-btn--lg">Contact Us <span class="el-dot" aria-hidden="true">●</span></a>
+    <div class="cta__inner">
+      <span class="cta__status" data-reveal>
+        <span class="cta__status-dot" aria-hidden="true"></span>
+        Available for new partnerships
+      </span>
+      <span class="cta__label" data-reveal style="--d:.06s">(06) — Contact</span>
+      <span class="el-keyline cta__keyline" aria-hidden="true" data-reveal style="--d:.1s"><i></i><i></i><i></i></span>
+
+      <h2 class="cta__title">
+        <span data-reveal style="--d:.14s">Let's advance</span>
+        <span data-reveal style="--d:.22s">together<em>.</em></span>
+      </h2>
+
+      <p class="cta__sub" data-reveal style="--d:.3s">Talk to our specialists about instruments, reagents, service and long-term partnership.</p>
+
+      <a href="mailto:hello@elincou.com" class="cta__mail" data-reveal style="--d:.36s">
+        <span class="cta__mail-text">hello@elincou.com</span>
+        <span class="cta__mail-arrow" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12h15M13 6l6 6-6 6"/></svg>
+        </span>
+      </a>
+
+      <div class="cta__meta" data-reveal style="--d:.44s">
+        <div class="cta__meta-col">
+          <span class="cta__meta-label">Email</span>
+          <span class="cta__meta-val">hello@elincou.com</span>
+        </div>
+        <div class="cta__meta-col">
+          <span class="cta__meta-label">Response</span>
+          <span class="cta__meta-val">Within one business day</span>
+        </div>
+        <div class="cta__meta-col">
+          <span class="cta__meta-label">Support</span>
+          <span class="cta__meta-val">24/7 technical assistance</span>
+        </div>
       </div>
     </div>
+
     <div class="el-spectrum cta__spectrum" aria-hidden="true">
       <i style="height:10%"></i><i style="height:16%"></i>
       <i style="height:24%"></i><i style="height:30%"></i>
@@ -498,6 +528,6 @@
   </div>
 </footer>
 
-<script src="js/home.js?v=8"></script>
+<script src="js/home.js?v=9"></script>
 </body>
 </html>
