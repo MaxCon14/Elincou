@@ -487,19 +487,10 @@ body.is-loaded .hero__spectrum i { transform: none; }
 
 .fill__head {
   position: relative; z-index: 1;
-  display: flex; justify-content: space-between; align-items: flex-end;
-  gap: var(--el-space-5);
   margin-bottom: clamp(32px, 6vh, 64px);
 }
+.fill__label { display: block; }
 .fill__keyline { width: min(368px, 50vw); height: 3px; gap: 4px; margin-top: 12px; display: flex; }
-.fill__counter {
-  font-family: var(--el-font-mono);
-  font-size: clamp(2.2rem, 4.5vw, 3.75rem);
-  font-weight: 300; line-height: 1;
-  letter-spacing: -0.02em;
-  color: var(--el-blue);
-  font-variant-numeric: tabular-nums;
-}
 
 .fill__text {
   position: relative; z-index: 1;
@@ -516,6 +507,7 @@ body.is-loaded .hero__spectrum i { transform: none; }
 .fill__bar {
   position: relative; z-index: 1;
   height: 2px; background: var(--el-line);
+  max-width: min(680px, 46vw);
   margin-top: clamp(36px, 7vh, 72px);
 }
 .fill__bar i {

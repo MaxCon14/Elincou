@@ -189,7 +189,6 @@
   /* ---------- Vision quote — word fill on scroll ---------- */
   const fillText = document.getElementById('fill-text');
   const fillSection = document.querySelector('.fill');
-  const fillCounter = document.getElementById('fill-counter');
   const fillBar = document.getElementById('fill-bar');
 
   if (fillText && fillSection) {
@@ -207,12 +206,10 @@
         const p = clamp((window.scrollY - fillSection.offsetTop) / (total * 0.82), 0, 1);
         const onCount = Math.round(p * spans.length);
         spans.forEach((s, i) => s.classList.toggle('on', i < onCount));
-        if (fillCounter) fillCounter.textContent = String(Math.round(p * 100)).padStart(3, '0') + '%';
         if (fillBar) fillBar.style.transform = `scaleX(${p})`;
       }, { passive: true });
     } else {
       spans.forEach((s) => s.classList.add('on'));
-      if (fillCounter) fillCounter.textContent = '100%';
       if (fillBar) fillBar.style.transform = 'scaleX(1)';
     }
   }
