@@ -195,7 +195,7 @@ body.is-loaded .hero__sub, body.is-loaded .hero__actions { opacity: 1; transform
 .hero__spectrum {
   position: absolute; left: 0; right: 0; bottom: 0;
   height: 100%; z-index: 0;
-  gap: clamp(1px, 0.15vw, 3px);
+  gap: 0;
   pointer-events: none;
 }
 .hero__spectrum i {
@@ -615,7 +615,7 @@ body.is-loaded .hero__spectrum i { transform: none; }
   margin: var(--el-space-4) 0 var(--el-space-5);
 }
 .cta__sub { max-width: 42ch; color: var(--el-text-muted); font-size: var(--el-text-sm); margin: 0 0 var(--el-space-6); }
-.cta__spectrum { height: 22vh; min-height: 150px; }
+.cta__spectrum { height: 22vh; min-height: 150px; gap: 0; }
 
 /* ---------- Footer ---------- */
 
