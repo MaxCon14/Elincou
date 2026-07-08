@@ -9,9 +9,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@300;400;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/tokens.css?v=11">
-<link rel="stylesheet" href="css/styles.css?v=11">
-<link rel="stylesheet" href="css/home.css?v=11">
+<link rel="stylesheet" href="css/tokens.css?v=12">
+<link rel="stylesheet" href="css/styles.css?v=12">
+<link rel="stylesheet" href="css/home.css?v=12">
 </head>
 <body class="home">
 
@@ -349,8 +349,19 @@
   <!-- ============ VISION — scroll-fill quote ============ -->
   <section class="fill" id="vision">
     <div class="fill__pin">
-      <span class="fill__label">(04) — Vision</span>
+      <svg class="fill__globe" viewBox="0 0 100 100" aria-hidden="true"><use href="#el-symbol-art"/></svg>
+
+      <div class="fill__head">
+        <div>
+          <span class="fill__label">(04) — Vision</span>
+          <span class="el-keyline fill__keyline" aria-hidden="true"><i></i><i></i><i></i></span>
+        </div>
+        <span class="fill__counter" id="fill-counter" aria-hidden="true">000%</span>
+      </div>
+
       <p class="fill__text" id="fill-text">To become the trusted scientific partner connecting healthcare, research, and laboratory communities with the technologies that advance progress.</p>
+
+      <div class="fill__bar" aria-hidden="true"><i id="fill-bar"></i></div>
     </div>
   </section>
 
@@ -528,6 +539,6 @@
   </div>
 </footer>
 
-<script src="js/home.js?v=11"></script>
+<script src="js/home.js?v=12"></script>
 </body>
 </html>
