@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Elincou Design System</title>
+<meta name="description" content="The Elincou Diagnostics design system — colours, typography, logo, tokens and components. Advancing diagnostics together.">
+<link rel="icon" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect width="100" height="100" fill="%230E0E0E"/><g fill="none" stroke="white" stroke-width="3"><circle cx="50" cy="50" r="34"/><ellipse cx="50" cy="50" rx="34" ry="27"/><ellipse cx="50" cy="50" rx="34" ry="20"/><ellipse cx="50" cy="50" rx="34" ry="13"/><ellipse cx="50" cy="50" rx="34" ry="6"/></g></svg>'>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/tokens.css?v=7">
+<link rel="stylesheet" href="css/styles.css?v=7">
+</head>
+<body>
+
+<!-- Shared logo symbol -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <g id="el-symbol-art" fill="none" stroke="currentColor" stroke-width="3.2">
+      <circle cx="50" cy="50" r="46"/>
+      <ellipse cx="50" cy="50" rx="46" ry="38.5"/>
+      <ellipse cx="50" cy="50" rx="46" ry="31"/>
+      <ellipse cx="50" cy="50" rx="46" ry="23.5"/>
+      <ellipse cx="50" cy="50" rx="46" ry="16"/>
+      <ellipse cx="50" cy="50" rx="46" ry="8.5"/>
+      <line x1="4" y1="50" x2="96" y2="50"/>
+    </g>
+    <symbol id="el-symbol" viewBox="0 0 100 100"><use href="#el-symbol-art"/></symbol>
+    <symbol id="el-bug" viewBox="0 0 100 100">
+      <circle cx="50" cy="50" r="50" fill="currentColor" stroke="none"/>
+      <g fill="none" stroke="var(--el-bug-line, #fff)" stroke-width="2.6">
+        <circle cx="50" cy="50" r="33"/>
+        <ellipse cx="50" cy="50" rx="33" ry="27"/>
+        <ellipse cx="50" cy="50" rx="33" ry="21.5"/>
+        <ellipse cx="50" cy="50" rx="33" ry="16"/>
+        <ellipse cx="50" cy="50" rx="33" ry="10.5"/>
+        <ellipse cx="50" cy="50" rx="33" ry="5.5"/>
+        <line x1="17" y1="50" x2="83" y2="50"/>
+      </g>
+    </symbol>
+  </defs>
+</svg>
+
+<div class="el-shell">
+
+  <!-- ============ SIDEBAR ============ -->
+  <aside class="el-sidebar">
+    <a class="el-sidebar__brand" href="#top">
+      <svg><use href="#el-symbol"/></svg>
+      <span class="el-sidebar__brand-name">Elincou</span>
+    </a>
+    <p class="el-sidebar__meta">Design System — V1.0</p>
+
+    <nav class="el-nav" aria-label="Design system sections">
+      <span class="el-nav__group">Index</span>
+      <a class="el-nav__link" href="#foundation"><span class="n">01</span> Foundation</a>
+      <a class="el-nav__link" href="#logo"><span class="n">02</span> Logo</a>
+      <a class="el-nav__link" href="#colour"><span class="n">03</span> Colour</a>
+      <a class="el-nav__link" href="#typography"><span class="n">04</span> Typography</a>
+      <a class="el-nav__link" href="#voice"><span class="n">05</span> Voice &amp; Tone</a>
+      <a class="el-nav__link" href="#tokens"><span class="n">06</span> Tokens</a>
+      <a class="el-nav__link" href="#components"><span class="n">07</span> Components</a>
+      <a class="el-nav__link" href="#applications"><span class="n">08</span> Applications</a>
+      <span class="el-nav__group">Site</span>
+      <a class="el-nav__link" href="home.html"><span class="n">↗</span> Homepage</a>
+    </nav>
+
+    <p class="el-sidebar__foot">© 2026 Elincou<br>Advancing diagnostics together.</p>
+  </aside>
+
+  <!-- ============ MAIN ============ -->
+  <main class="el-main" id="top">
+
+    <!-- HERO -->
+    <header class="el-hero">
+      <div class="el-container">
+        <div class="el-hero__topline">
+          <span>Elincou Diagnostics</span>
+          <span>Scientific Equipment &amp; Healthcare Technologies</span>
+          <span>V1.0 — 2026</span>
+        </div>
+        <h1 class="el-hero__title">
+          <span class="row">Design</span>
+          <span class="row"><svg aria-hidden="true"><use href="#el-symbol"/></svg>&nbsp;System</span>
+        </h1>
+        <div class="el-hero__meta">
+          <div>
+            <span class="el-meta-label">Purpose</span>
+            <p>The single source of truth for building Elincou products and communications — colours, typography, logo usage, design tokens and UI components, distilled from the Elincou Brand Guidelines v1.0.</p>
+          </div>
+          <div>
+            <span class="el-meta-label">Typeface</span>
+            <span class="el-meta-value">Gothic A1<small>Light · Regular · SemiBold</small></span>
+          </div>
+          <div>
+            <span class="el-meta-label">Palette</span>
+            <span class="el-meta-value">8 colours<small>5 primary · 3 extended</small></span>
+          </div>
+        </div>
+        <div class="el-spectrum el-hero__spectrum" aria-hidden="true">
+          <i style="height:10%"></i><i style="height:16%"></i>
+          <i style="height:24%"></i><i style="height:30%"></i>
+          <i style="height:38%"></i><i style="height:44%"></i>
+          <i style="height:52%"></i><i style="height:58%"></i>
+          <i style="height:66%"></i><i style="height:72%"></i>
+          <i style="height:80%"></i><i style="height:86%"></i>
+          <i style="height:94%"></i><i style="height:100%"></i>
+        </div>
+      </div>
+    </header>
+
+    <!-- MARQUEE -->
+    <div class="el-marquee" aria-hidden="true">
+      <div class="el-marquee__track">
+        <span>Advancing diagnostics together</span><span>Knowledge</span><span>Precision</span><span>Partnership</span><span>Progress</span>
+        <span>Advancing diagnostics together</span><span>Knowledge</span><span>Precision</span><span>Partnership</span><span>Progress</span>
+      </div>
+    </div>
+
+    <!-- FOUNDATION -->
+    <section class="el-section" id="foundation">
+      <div class="el-container">
+        <div class="el-sec-head">
+          <span class="el-sec-num">(01)</span>
+          <h2>Foundation</h2>
+          <span class="el-sec-tag">Brand</span>
+        </div>
+        <p class="el-section-intro">Elincou connects laboratories, healthcare professionals, researchers and institutions with the technologies they need to operate with confidence. Every design decision should express expertise, reliability and forward-thinking progress.</p>
+
+        <div class="el-grid el-grid--2">
+          <div class="el-cell">
+            <h4>Vision</h4>
+            <p>To become the trusted scientific partner connecting healthcare, research, and laboratory communities with the technologies that advance progress.</p>
+          </div>
+          <div class="el-cell">
+            <h4>Mission</h4>
+            <p>To support scientific and healthcare advancement by providing access to innovative technologies, expert guidance, and reliable long-term partnerships.</p>
+          </div>
+        </div>
+
+        <h3 class="el-h3">Core values <span class="el-h3__index">01.1</span></h3>
+        <div class="el-grid el-grid--4">
+          <div class="el-cell el-cell--value">
+            <span class="el-value-index">01</span>
+            <h4>Knowledge</h4>
+            <p>Science advances through understanding. We expand our expertise to help clients navigate complex technologies.</p>
+          </div>
+          <div class="el-cell el-cell--value">
+            <span class="el-value-index">02</span>
+            <h4>Precision</h4>
+            <p>Accuracy and reliability are essential. We approach every solution with discipline and technical excellence.</p>
+          </div>
+          <div class="el-cell el-cell--value">
+            <span class="el-value-index">03</span>
+            <h4>Partnership</h4>
+            <p>We build long-term relationships with clients, manufacturers and stakeholders based on collaboration and shared success.</p>
+          </div>
+          <div class="el-cell el-cell--value">
+            <span class="el-value-index">04</span>
+            <h4>Progress</h4>
+            <p>Innovation drives meaningful change. We embrace technologies that contribute to scientific advancement.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LOGO -->
+    <section class="el-section" id="logo">
+      <div class="el-container">
+        <div class="el-sec-head">
+          <span class="el-sec-num">(02)</span>
+          <h2>Logo</h2>
+          <span class="el-sec-tag">Brand</span>
+        </div>
+        <p class="el-section-intro">The identity combines a contemporary wordmark with a spherical symbol — a connector of knowledge, technology and scientific advancement. Flowing horizontal lines create movement and information exchange; the spherical form communicates global perspective and long-term vision.</p>
+
+        <div class="el-grid el-grid--2">
+          <div>
+            <div class="el-logo-tile el-logo-tile--dark">
+              <div class="el-logo-lockup">
+                <svg><use href="#el-symbol"/></svg>
+                <span class="el-wordmark">Elincou</span>
+              </div>
+            </div>
+            <p class="el-logo-caption"><span><strong>Primary logo</strong> — use whenever possible</span><span class="el-idx">02.1</span></p>
+          </div>
+          <div>
+            <div class="el-logo-tile el-logo-tile--light">
+              <span class="el-wordmark" style="font-size:2.5rem">Elincou</span>
+            </div>
+            <p class="el-logo-caption"><span><strong>Wordmark</strong> — constrained environments</span><span class="el-idx">02.2</span></p>
+          </div>
+          <div>
+            <div class="el-logo-tile el-logo-tile--grey">
+              <svg style="width:96px;height:96px"><use href="#el-symbol"/></svg>
+            </div>
+            <p class="el-logo-caption"><span><strong>Symbol</strong> — digital &amp; social applications</span><span class="el-idx">02.3</span></p>
+          </div>
+          <div>
+            <div class="el-logo-tile el-logo-tile--blue">
+              <svg style="width:96px;height:96px;color:#fff;--el-bug-line:#3777FF"><use href="#el-bug"/></svg>
+            </div>
+            <p class="el-logo-caption"><span><strong>Bug</strong> — favicons &amp; small placements</span><span class="el-idx">02.4</span></p>
+          </div>
+        </div>
+
+        <h3 class="el-h3">Usage rules <span class="el-h3__index">02.5</span></h3>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:var(--el-space-6)" class="el-rules-cols">
+          <ul class="el-rule-list">
+            <li><span class="ok">DO</span> Minimum size: 20px height for every identity element</li>
+            <li><span class="ok">DO</span> Clear space: keep the height/width of the symbol free around the logo</li>
+            <li><span class="ok">DO</span> On dark colours use the light identity; on light colours use dark</li>
+            <li><span class="ok">DO</span> Outside the brand palette, use only the black or white logo</li>
+          </ul>
+          <ul class="el-rule-list">
+            <li><span class="no">DON'T</span> Stretch, distort, rotate or outline</li>
+            <li><span class="no">DON'T</span> Apply effects, gradients or unapproved colours</li>
+            <li><span class="no">DON'T</span> Use low-contrast combinations</li>
+            <li><span class="no">DON'T</span> Change logo placement or recolour individual elements</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- COLOUR -->
+    <section class="el-section" id="colour">
+      <div class="el-container">
+        <div class="el-sec-head">
+          <span class="el-sec-num">(03)</span>
+          <h2>Colour</h2>
+          <span class="el-sec-tag">Brand</span>
+        </div>
+        <p class="el-section-intro">A restrained neutral core carries the brand; three extended colours create hierarchy and emphasis. Primary colours should dominate the visual language — click any swatch to copy its HEX value.</p>
+
+        <h3 class="el-h3">Primary palette <span class="el-h3__index">03.1</span></h3>
+        <div class="el-grid el-grid--3" id="palette-primary"></div>
+
+        <h3 class="el-h3">Extended palette <span class="el-h3__index">03.2</span></h3>
+        <div class="el-grid el-grid--3" id="palette-extended"></div>
+
+        <h3 class="el-h3">Usage proportion <span class="el-h3__index">03.3</span></h3>
+        <div class="el-proportion" role="img" aria-label="Colour usage proportion bar: white and light neutrals dominate, accents used sparingly">
+          <span style="background:#FFFFFF;width:26%"></span>
+          <span style="background:#F4F4F9;width:20%"></span>
+          <span style="background:#E8E7E4;width:18%"></span>
+          <span style="background:#999999;width:13%"></span>
+          <span style="background:#0E0E0E;width:13%"></span>
+          <span style="background:#57BB78;width:3.5%"></span>
+          <span style="background:#3777FF;width:3.5%"></span>
+          <span style="background:#FFE156;width:3%"></span>
+        </div>
+        <p class="el-note" style="margin-top:var(--el-space-3)">NEUTRALS ≈ 90% OF ANY COMPOSITION · EMERALD, CRAYOLA BLUE AND MUSTARD ARE ACCENTS — USE SELECTIVELY FOR HIERARCHY, EMPHASIS AND CATEGORISATION</p>
+
+        <h3 class="el-h3">Approved type &amp; colour combinations <span class="el-h3__index">03.4</span></h3>
+        <div class="el-grid el-grid--4">
+          <div class="el-combo" style="background:#FFFFFF;color:#0E0E0E">Aa</div>
+          <div class="el-combo" style="background:#F4F4F9;color:#0E0E0E">Aa</div>
+          <div class="el-combo" style="background:#E8E7E4;color:#0E0E0E">Aa</div>
+          <div class="el-combo" style="background:#999999;color:#FFFFFF">Aa</div>
+          <div class="el-combo" style="background:#0E0E0E;color:#FFFFFF">Aa</div>
+          <div class="el-combo" style="background:#3777FF;color:#FFFFFF">Aa</div>
+          <div class="el-combo" style="background:#FFE156;color:#0E0E0E">Aa</div>
+          <div class="el-combo" style="background:#57BB78;color:#FFFFFF">Aa</div>
+        </div>
+        <p class="el-note" style="margin-top:var(--el-space-3)">USE ONLY APPROVED COMBINATIONS · NEVER USE GRADIENTS, MULTIPLE TEXT COLOURS AT ONCE, OR LOW-CONTRAST PAIRINGS</p>
+      </div>
+    </section>
+
+    <!-- TYPOGRAPHY -->
+    <section class="el-section" id="typography">
+      <div class="el-container">
+        <div class="el-sec-head">
+          <span class="el-sec-num">(04)</span>
+          <h2>Typography</h2>
+          <span class="el-sec-tag">Brand</span>
+        </div>
+        <p class="el-section-intro">Gothic A1 balances precision, clarity and contemporary character. Its clean geometric construction reflects the structured nature of science and technology while remaining highly readable in digital and print.</p>
+
+        <div class="el-specimen">
+          <p style="font-size:clamp(3rem,7vw,5.5rem);font-weight:400;margin:0 0 var(--el-space-5);letter-spacing:-0.03em;line-height:1">Gothic A1</p>
+          <p class="el-specimen__glyphs" style="font-weight:300">ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>abcdefghijklmnopqrstuvwxyz 0123456789 .,&amp;?!</p>
+          <p class="el-note" style="margin:var(--el-space-5) 0 0">AVAILABLE ON <a href="https://fonts.google.com/specimen/Gothic+A1" target="_blank" rel="noopener" style="color:var(--el-accent)">GOOGLE FONTS</a> · THREE APPROVED WEIGHTS</p>
+        </div>
+
+        <h3 class="el-h3">Weights in use <span class="el-h3__index">04.1</span></h3>
+        <div class="el-specimen">
+          <div class="el-weight-row">
+            <p class="el-weight-row__sample" style="font-weight:300">Advancing diagnostics together.</p>
+            <div class="el-weight-row__meta">Light — 300<br>Body copy</div>
+          </div>
+          <div class="el-weight-row">
+            <p class="el-weight-row__sample" style="font-weight:400">Advancing diagnostics together.</p>
+            <div class="el-weight-row__meta">Regular — 400<br>Headings, UI default</div>
+          </div>
+          <div class="el-weight-row">
+            <p class="el-weight-row__sample" style="font-weight:600">Advancing diagnostics together.</p>
+            <div class="el-weight-row__meta">SemiBold — 600<br>Subheadings, emphasis</div>
+          </div>
+        </div>
+
+        <h3 class="el-h3">Hierarchy <span class="el-h3__index">04.2</span></h3>
+        <div class="el-specimen">
+          <div class="el-type-row">
+            <div class="el-type-row__meta">Hero — 61px<br>Regular · tight</div>
+            <p class="el-type-row__sample" style="font-size:var(--el-text-5xl);font-weight:400;letter-spacing:var(--el-tracking-tight)">Precision you can trust</p>
+          </div>
+          <div class="el-type-row">
+            <div class="el-type-row__meta">Display — 49px<br>Regular · tight</div>
+            <p class="el-type-row__sample" style="font-size:var(--el-text-4xl);font-weight:400;letter-spacing:var(--el-tracking-tight)">Precision you can trust</p>
+          </div>
+          <div class="el-type-row">
+            <div class="el-type-row__meta">H1 — 39px<br>Regular</div>
+            <p class="el-type-row__sample" style="font-size:var(--el-text-3xl);font-weight:400">Precision you can trust</p>
+          </div>
+          <div class="el-type-row">
+            <div class="el-type-row__meta">H2 — 31px<br>Regular</div>
+            <p class="el-type-row__sample" style="font-size:var(--el-text-2xl);font-weight:400">Precision you can trust</p>
+          </div>
+          <div class="el-type-row">
+            <div class="el-type-row__meta">H3 — 25px<br>SemiBold</div>
+            <p class="el-type-row__sample" style="font-size:var(--el-text-xl);font-weight:600">Precision you can trust</p>
+          </div>
+          <div class="el-type-row">
+            <div class="el-type-row__meta">Body — 16px<br>Light · 1.65</div>
+            <p class="el-type-row__sample" style="font-weight:300;white-space:normal">Elincou bridges complexity by connecting clients with trusted solutions, expert guidance and long-term support across diagnostics, research and healthcare.</p>
+          </div>
+          <div class="el-type-row">
+            <div class="el-type-row__meta">Caption — 12px<br>SemiBold · wide</div>
+            <p class="el-type-row__sample" style="font-size:var(--el-text-xs);font-weight:600;letter-spacing:var(--el-tracking-wide);text-transform:uppercase">Scientific &amp; diagnostic technologies</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VOICE -->
+    <section class="el-section" id="voice">
+      <div class="el-container">
+        <div class="el-sec-head">
+          <span class="el-sec-num">(05)</span>
+          <h2>Voice &amp; Tone</h2>
+          <span class="el-sec-tag">Brand</span>
+        </div>
+        <p class="el-section-intro">Our voice reflects the same principles as the visual identity: expertise, clarity and progress. Simplify complexity — communicate scientific information so it feels accessible, relevant and trustworthy.</p>
+
+        <div class="el-voice-quote">
+          <p>Advancing diagnostics together.</p>
+          <small>Brand promise</small>
+        </div>
+
+        <div class="el-grid el-grid--3" style="margin-top:var(--el-space-6)">
+          <div class="el-cell el-cell--value">
+            <span class="el-value-index">A</span>
+            <h4>Knowledgeable</h4>
+            <p>Communicate with expertise and authority while remaining accessible. Translate complex information into clear, valuable insight.</p>
+          </div>
+          <div class="el-cell el-cell--value">
+            <span class="el-value-index">B</span>
+            <h4>Confident</h4>
+            <p>Assured, reliable and forward-thinking. Lead with knowledge, experience and clarity — never exaggeration or unnecessary claims.</p>
+          </div>
+          <div class="el-cell el-cell--value">
+            <span class="el-value-index">C</span>
+            <h4>Supportive</h4>
+            <p>As a long-term partner, demonstrate collaboration, responsiveness and a genuine commitment to helping clients succeed.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TOKENS -->
+    <section class="el-section" id="tokens">
+      <div class="el-container">
+        <div class="el-sec-head">
+          <span class="el-sec-num">(06)</span>
+          <h2>Design Tokens</h2>
+          <span class="el-sec-tag">Build</span>
+        </div>
+        <p class="el-section-intro">Every value in this system ships as a CSS custom property in <code class="el-mono">css/tokens.css</code>. Import the file and build with variables — never hard-code brand values.</p>
+
+        <div class="el-code">
+          <button class="el-copy-btn" data-copy-target="token-snippet">Copy</button>
+          <pre id="token-snippet"><span class="tok-c">/* Elincou core tokens — see css/tokens.css for the full set */</span>
+<span class="tok-p">:root</span> {
+  <span class="tok-c">/* Colour · primary */</span>
+  <span class="tok-v">--el-white</span>:       #FFFFFF;
+  <span class="tok-v">--el-ghost-white</span>: #F4F4F9;
+  <span class="tok-v">--el-alabaster</span>:   #E8E7E4;
+  <span class="tok-v">--el-grey-olive</span>:  #999999;
+  <span class="tok-v">--el-onyx</span>:        #0E0E0E;
+
+  <span class="tok-c">/* Colour · extended */</span>
+  <span class="tok-v">--el-blue</span>:        #3777FF;
+  <span class="tok-v">--el-emerald</span>:     #57BB78;
+  <span class="tok-v">--el-mustard</span>:     #FFE156;
+
+  <span class="tok-c">/* Typography */</span>
+  <span class="tok-v">--el-font-family</span>:    'Gothic A1', sans-serif;
+  <span class="tok-v">--el-weight-light</span>:    300;
+  <span class="tok-v">--el-weight-regular</span>:  400;
+  <span class="tok-v">--el-weight-semibold</span>: 600;
+
+  <span class="tok-c">/* Spacing — 4px base scale */</span>
+  <span class="tok-v">--el-space-1</span>: 0.25rem;  <span class="tok-v">--el-space-4</span>: 1rem;
+  <span class="tok-v">--el-space-6</span>: 2rem;     <span class="tok-v">--el-space-8</span>: 4rem;
+
+  <span class="tok-c">/* Geometry — sharp system, no rounded corners */</span>
+  <span class="tok-v">--el-radius-sm</span>: 0;
+  <span class="tok-v">--el-radius-md</span>: 0;
+  <span class="tok-v">--el-radius-lg</span>: 0;
+  <span class="tok-v">--el-line</span>: rgba(14,14,14,0.16);
+}</pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMPONENTS -->
+    <section class="el-section" id="components">
+      <div class="el-container">
+        <div class="el-sec-head">
+          <span class="el-sec-num">(07)</span>
+          <h2>Components</h2>
+          <span class="el-sec-tag">Build</span>
+        </div>
+        <p class="el-section-intro">A starter UI kit built entirely from the tokens above. Onyx is the default action colour; Crayola Blue is reserved for accent actions and focus states; Emerald and Mustard communicate status. Flat surfaces, hairline rules, sharp corners.</p>
+
+        <h3 class="el-h3">Buttons <span class="el-h3__index">07.1</span></h3>
+        <div class="el-card" style="display:flex;flex-wrap:wrap;gap:var(--el-space-3);align-items:center">
+          <button class="el-btn el-btn--primary">Primary</button>
+          <button class="el-btn el-btn--accent">Accent</button>
+          <button class="el-btn el-btn--secondary">Secondary</button>
+          <button class="el-btn el-btn--ghost">Ghost</button>
+          <button class="el-btn el-btn--primary" disabled>Disabled</button>
+          <button class="el-btn el-btn--primary el-btn--sm">Small</button>
+          <button class="el-btn el-btn--primary el-btn--lg">Large</button>
+          <button class="el-btn el-btn--accent">Our Products <span class="el-dot" aria-hidden="true">●</span></button>
+          <button class="el-btn el-btn--secondary">Partner With Us <span class="el-dot" aria-hidden="true">●</span></button>
+        </div>
+
+        <h3 class="el-h3">Tags &amp; status <span class="el-h3__index">07.2</span></h3>
+        <div class="el-card" style="display:flex;flex-wrap:wrap;gap:var(--el-space-3);align-items:center">
+          <span class="el-tag el-tag--neutral">Neutral</span>
+          <span class="el-tag el-tag--info el-tag--dot">Info</span>
+          <span class="el-tag el-tag--success el-tag--dot">In stock</span>
+          <span class="el-tag el-tag--warning el-tag--dot">Low stock</span>
+        </div>
+
+        <h3 class="el-h3">Forms <span class="el-h3__index">07.3</span></h3>
+        <div class="el-card">
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:var(--el-space-5)" class="el-form-grid">
+            <div class="el-field">
+              <label class="el-label" for="demo-name">Full name</label>
+              <input class="el-input" id="demo-name" type="text" placeholder="Dr. Elena Papadopoulos">
+              <span class="el-hint">As it appears on your institution ID.</span>
+            </div>
+            <div class="el-field">
+              <label class="el-label" for="demo-org">Organisation type</label>
+              <select class="el-select" id="demo-org">
+                <option>Clinical laboratory</option>
+                <option>Hospital / healthcare provider</option>
+                <option>Research institution</option>
+              </select>
+            </div>
+            <div class="el-field">
+              <label class="el-label" for="demo-email">Work email</label>
+              <input class="el-input el-input--error" id="demo-email" type="email" value="elena@lab" aria-invalid="true" aria-describedby="demo-email-error">
+              <span class="el-error-text" id="demo-email-error">ERR — Enter a valid email address.</span>
+            </div>
+            <div class="el-field" style="justify-content:center;gap:var(--el-space-4)">
+              <label class="el-check"><input type="checkbox" checked> Subscribe to product updates</label>
+              <label class="el-toggle">
+                <input type="checkbox" checked>
+                <span class="el-toggle__track"></span>
+                Instrument telemetry enabled
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <h3 class="el-h3">Alerts <span class="el-h3__index">07.4</span></h3>
+        <div style="display:grid;gap:var(--el-space-3)">
+          <div class="el-alert el-alert--info">
+            <svg class="el-alert__icon" viewBox="0 0 20 20" fill="none"><rect x="1.75" y="1.75" width="16.5" height="16.5" stroke="#3777FF" stroke-width="1.5"/><path d="M10 9v5M10 6v.1" stroke="#3777FF" stroke-width="1.5"/></svg>
+            <div><strong>Calibration scheduled</strong> The HemaCore X2 analyser will run automatic calibration at 02:00 EET.</div>
+          </div>
+          <div class="el-alert el-alert--success">
+            <svg class="el-alert__icon" viewBox="0 0 20 20" fill="none"><rect x="1.75" y="1.75" width="16.5" height="16.5" stroke="#57BB78" stroke-width="1.5"/><path d="m6 10.2 2.6 2.6 5.4-5.6" stroke="#57BB78" stroke-width="1.5"/></svg>
+            <div><strong>Results validated</strong> Batch #4821 passed all quality control checks.</div>
+          </div>
+          <div class="el-alert el-alert--warning">
+            <svg class="el-alert__icon" viewBox="0 0 20 20" fill="none"><rect x="1.75" y="1.75" width="16.5" height="16.5" stroke="#8a7400" stroke-width="1.5"/><path d="M10 5.5v6M10 14.5v.1" stroke="#8a7400" stroke-width="1.5"/></svg>
+            <div><strong>Reagent low</strong> CBC reagent kit below 15% — reorder recommended within 5 working days.</div>
+          </div>
+        </div>
+
+        <h3 class="el-h3">Cards <span class="el-h3__index">07.5</span></h3>
+        <div class="el-grid el-grid--3">
+          <div class="el-stat-cell">
+            <p class="el-stat-cell__label">Instruments deployed</p>
+            <p class="el-stat-cell__value">1,284</p>
+            <span class="el-stat-cell__delta el-stat-cell__delta--up">▲ +12% VS LAST QUARTER</span>
+          </div>
+          <div class="el-stat-cell">
+            <p class="el-stat-cell__label">Partner laboratories</p>
+            <p class="el-stat-cell__value">312</p>
+            <span class="el-stat-cell__delta el-stat-cell__delta--up">▲ +8 NEW THIS MONTH</span>
+          </div>
+          <div class="el-feature-cell">
+            <h4>Advancing diagnostics together</h4>
+            <p>Connect your laboratory with trusted technologies and expert guidance.</p>
+            <a href="#" class="el-btn el-btn--accent el-btn--sm">Talk to an expert</a>
+          </div>
+        </div>
+
+        <h3 class="el-h3">Table <span class="el-h3__index">07.6</span></h3>
+        <div class="el-table-wrap">
+          <table class="el-table">
+            <thead>
+              <tr><th>Instrument</th><th>Category</th><th>Status</th><th>Service due</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>HemaCore X2</td><td>Haematology</td><td><span class="el-tag el-tag--success el-tag--dot">Operational</span></td><td>Sep 2026</td></tr>
+              <tr><td>ChemLine 700</td><td>Clinical chemistry</td><td><span class="el-tag el-tag--warning el-tag--dot">Maintenance</span></td><td>Jul 2026</td></tr>
+              <tr><td>ImmunoScan Pro</td><td>Immunoassay</td><td><span class="el-tag el-tag--success el-tag--dot">Operational</span></td><td>Nov 2026</td></tr>
+              <tr><td>MicroPlate MX</td><td>Microbiology</td><td><span class="el-tag el-tag--info el-tag--dot">Calibrating</span></td><td>Aug 2026</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3 class="el-h3">Navigation <span class="el-h3__index">07.7</span></h3>
+        <div class="el-demo-nav">
+          <span class="el-demo-nav__brand">
+            <svg><use href="#el-symbol"/></svg>
+            Elincou
+          </span>
+          <nav class="el-demo-nav__links" aria-label="Demo navigation">
+            <a href="#" class="is-active">Products</a>
+            <a href="#">Solutions</a>
+            <a href="#">Support</a>
+            <a href="#">About</a>
+          </nav>
+          <button class="el-btn el-btn--primary el-btn--sm">Contact us</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- APPLICATIONS -->
+    <section class="el-section" id="applications">
+      <div class="el-container">
+        <div class="el-sec-head">
+          <span class="el-sec-num">(08)</span>
+          <h2>Applications</h2>
+          <span class="el-sec-tag">Build</span>
+        </div>
+        <p class="el-section-intro">How the system comes together on the Elincou website. The reference hero pattern combines the boxed navigation, category keyline, dot buttons and the spectrum device — ascending gradient bars expressing growth, precision and progress.</p>
+
+        <h3 class="el-h3">Hero pattern <span class="el-h3__index">08.1</span></h3>
+        <div class="el-app-frame">
+          <div class="el-app-hero">
+            <div class="el-appnav">
+              <span class="el-appnav__brand">
+                <svg><use href="#el-symbol"/></svg>
+                <span class="el-appnav__brand-name">Elincou<small>Diagnostics</small></span>
+              </span>
+              <nav class="el-appnav__links" aria-label="Application demo navigation">
+                <a href="#applications">About Us</a>
+                <a href="#applications">Products</a>
+                <a href="#applications">Portfolio</a>
+                <a href="#applications">Careers</a>
+                <a href="#applications" class="el-appnav__cta">Contact Us</a>
+              </nav>
+            </div>
+
+            <p class="el-app-hero__overline">Scientific &amp; Diagnostic Technologies</p>
+            <span class="el-keyline" aria-hidden="true"><i></i><i></i><i></i></span>
+
+            <h4 class="el-app-hero__title">Advancing Diagnostics Together Through Precision And Expertise.</h4>
+            <p class="el-app-hero__body">Elincou connects laboratories, healthcare professionals, and research environments with trusted technologies, expert guidance, and long-term support.</p>
+
+            <div class="el-app-hero__actions">
+              <a href="#applications" class="el-btn el-btn--accent">Our Products <span class="el-dot" aria-hidden="true">●</span></a>
+              <a href="#applications" class="el-btn el-btn--secondary">Partner With Us <span class="el-dot" aria-hidden="true">●</span></a>
+            </div>
+
+            <div class="el-spectrum el-app-hero__spectrum" aria-hidden="true">
+              <i style="height:10%"></i><i style="height:16%"></i>
+              <i style="height:24%"></i><i style="height:30%"></i>
+              <i style="height:38%"></i><i style="height:44%"></i>
+              <i style="height:52%"></i><i style="height:58%"></i>
+              <i style="height:66%"></i><i style="height:72%"></i>
+              <i style="height:80%"></i><i style="height:86%"></i>
+              <i style="height:94%"></i><i style="height:100%"></i>
+            </div>
+          </div>
+        </div>
+
+        <h3 class="el-h3">Ingredients <span class="el-h3__index">08.2</span></h3>
+        <div class="el-grid el-grid--4">
+          <div class="el-cell">
+            <h4>Boxed navigation</h4>
+            <p>Framed brand card and ghost-white link boxes; the contact action carries Emerald as the single accent.</p>
+          </div>
+          <div class="el-cell">
+            <h4>Category keyline</h4>
+            <p>A 2px tricolor rule — Emerald, Crayola Blue, Mustard — beneath uppercase category overlines.</p>
+          </div>
+          <div class="el-cell">
+            <h4>Dot buttons</h4>
+            <p>Primary actions in Crayola Blue, secondary outlined in Onyx, both closed with a trailing dot marker.</p>
+          </div>
+          <div class="el-cell">
+            <h4>Spectrum device</h4>
+            <p>Ascending bars blending Mustard, Crayola Blue and Emerald. Display graphic only — never behind text or the logo.</p>
+          </div>
+        </div>
+        <p class="el-note" style="margin-top:var(--el-space-3)">THE SPECTRUM DEVICE IS A GRAPHIC ELEMENT, NOT A COLOUR APPLICATION — TYPE AND LOGO REMAIN SOLID, APPROVED COMBINATIONS ONLY</p>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="el-footer">
+      <div class="el-container">
+        <div class="el-footer__meta">
+          <div>
+            <span class="el-meta-label">System</span>
+            <p>Elincou Design System V1.0 — the single source of truth for products and communications.</p>
+          </div>
+          <div>
+            <span class="el-meta-label">Source</span>
+            <p>Elincou Brand Guidelines V1.0<br>© 2026 Avocadots Design Studio</p>
+          </div>
+          <div>
+            <span class="el-meta-label">Promise</span>
+            <p>Advancing diagnostics together.</p>
+          </div>
+        </div>
+        <span class="el-footer__wordmark" aria-hidden="true">Elincou</span>
+      </div>
+      <div style="border-top:1px solid rgba(255,255,255,0.14)">
+        <div class="el-container">
+          <div class="el-footer__bottom">
+            <span>Elincou Diagnostics</span>
+            <span>Scientific Equipment &amp; Healthcare Technologies</span>
+            <span>2026</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </main>
+</div>
+
+<div class="el-toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="js/main.js?v=7"></script>
+</body>
+</html>

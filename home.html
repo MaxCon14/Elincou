@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Elincou — Advancing Diagnostics Together</title>
+<meta name="description" content="Elincou connects laboratories, healthcare professionals, and research environments with trusted technologies, expert guidance, and long-term support.">
+<link rel="icon" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect width="100" height="100" fill="%230E0E0E"/><g fill="none" stroke="white" stroke-width="3"><circle cx="50" cy="50" r="34"/><ellipse cx="50" cy="50" rx="34" ry="27"/><ellipse cx="50" cy="50" rx="34" ry="20"/><ellipse cx="50" cy="50" rx="34" ry="13"/><ellipse cx="50" cy="50" rx="34" ry="6"/></g></svg>'>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/tokens.css?v=7">
+<link rel="stylesheet" href="css/styles.css?v=7">
+<link rel="stylesheet" href="css/home.css?v=7">
+</head>
+<body class="home">
+
+<!-- Shared logo symbol -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <g id="el-symbol-art" fill="none" stroke="currentColor" stroke-width="3.2">
+      <circle cx="50" cy="50" r="46"/>
+      <ellipse cx="50" cy="50" rx="46" ry="38.5"/>
+      <ellipse cx="50" cy="50" rx="46" ry="31"/>
+      <ellipse cx="50" cy="50" rx="46" ry="23.5"/>
+      <ellipse cx="50" cy="50" rx="46" ry="16"/>
+      <ellipse cx="50" cy="50" rx="46" ry="8.5"/>
+      <line x1="4" y1="50" x2="96" y2="50"/>
+    </g>
+    <symbol id="el-symbol" viewBox="0 0 100 100"><use href="#el-symbol-art"/></symbol>
+  </defs>
+</svg>
+
+<!-- ============ PRELOADER ============ -->
+<div class="loader" id="loader" aria-hidden="true">
+  <div class="loader__inner">
+    <svg class="loader__globe" viewBox="0 0 100 100">
+      <g fill="none" stroke="currentColor" stroke-width="2.4">
+        <circle cx="50" cy="50" r="46"/>
+        <ellipse cx="50" cy="50" rx="46" ry="38.5"/>
+        <ellipse cx="50" cy="50" rx="46" ry="31"/>
+        <ellipse cx="50" cy="50" rx="46" ry="23.5"/>
+        <ellipse cx="50" cy="50" rx="46" ry="16"/>
+        <ellipse cx="50" cy="50" rx="46" ry="8.5"/>
+        <line x1="4" y1="50" x2="96" y2="50"/>
+      </g>
+    </svg>
+    <div class="loader__row">
+      <span class="loader__word">Elincou</span>
+      <span class="loader__count" id="loader-count">00</span>
+    </div>
+    <div class="loader__bar"><i id="loader-bar"></i></div>
+    <span class="loader__tag">Advancing diagnostics together</span>
+  </div>
+</div>
+
+<!-- Scroll progress -->
+<div class="scroll-progress" aria-hidden="true"><i id="scroll-progress"></i></div>
+
+<!-- ============ HEADER ============ -->
+<header class="site-head" id="site-head">
+  <a class="el-appnav__brand" href="#top">
+    <svg><use href="#el-symbol"/></svg>
+    <span class="el-appnav__brand-name">Elincou<small>Diagnostics</small></span>
+  </a>
+  <nav class="el-appnav__links site-head__links" aria-label="Main navigation">
+    <a href="#expertise">What We Do</a>
+    <a href="#products">Products</a>
+    <a href="#values">Values</a>
+    <a href="#vision">Vision</a>
+    <a href="index.html">Design System</a>
+    <a href="#contact" class="el-appnav__cta">Contact Us</a>
+  </nav>
+</header>
+
+<main id="top">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="hero__content">
+      <p class="hero__overline"><span>Scientific &amp; Diagnostic Technologies</span></p>
+      <span class="el-keyline hero__keyline" aria-hidden="true"><i></i><i></i><i></i></span>
+
+      <h1 class="hero__title">
+        <span class="l"><span class="w">Advancing Diagnostics</span></span>
+        <span class="l"><span class="w">Together Through Precision</span></span>
+        <span class="l"><span class="w">And Expertise.</span></span>
+      </h1>
+
+      <p class="hero__sub">Elincou connects laboratories, healthcare professionals, and&nbsp;research environments with trusted technologies, expert&nbsp;guidance, and long-term support</p>
+
+      <div class="hero__actions">
+        <a href="#products" class="el-btn el-btn--accent">Our Products <span class="el-dot" aria-hidden="true">●</span></a>
+        <a href="#contact" class="el-btn el-btn--secondary">Partner With Us <span class="el-dot" aria-hidden="true">●</span></a>
+      </div>
+    </div>
+
+    <div class="el-spectrum hero__spectrum" id="hero-spectrum" aria-hidden="true">
+      <i style="height:14%"></i><i style="height:21%"></i>
+      <i style="height:29%"></i><i style="height:37%"></i>
+      <i style="height:45%"></i><i style="height:52%"></i>
+      <i style="height:59%"></i><i style="height:66%"></i>
+    </div>
+  </section>
+
+  <!-- ============ MARQUEE ============ -->
+  <div class="el-marquee" aria-hidden="true">
+    <div class="el-marquee__track">
+      <span>Knowledge</span><span>Precision</span><span>Partnership</span><span>Progress</span><span>Advancing diagnostics together</span>
+      <span>Knowledge</span><span>Precision</span><span>Partnership</span><span>Progress</span><span>Advancing diagnostics together</span>
+    </div>
+  </div>
+
+  <!-- ============ WHAT WE DO — pinned horizontal scroll ============ -->
+  <section class="hs" id="expertise">
+    <div class="hs__pin">
+      <header class="hs__head">
+        <span class="hs__label">(01) — What We Do</span>
+        <span class="hs__counter"><span id="hs-current">01</span>&nbsp;/&nbsp;04</span>
+      </header>
+      <div class="hs__progress"><i id="hs-progress"></i></div>
+
+      <div class="hs__track" id="hs-track">
+        <article class="hs__panel">
+          <div class="hs__panel-top">
+            <span class="hs__idx">01</span>
+            <svg class="hs__art" viewBox="0 0 100 100" aria-hidden="true"><use href="#el-symbol-art"/></svg>
+          </div>
+          <h3>Scientific &amp; Diagnostic Technologies</h3>
+          <p>Providing access to advanced solutions that support laboratories, healthcare providers, and research environments.</p>
+        </article>
+
+        <article class="hs__panel">
+          <div class="hs__panel-top">
+            <span class="hs__idx">02</span>
+            <svg class="hs__art" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true">
+              <circle cx="50" cy="50" r="46"/><circle cx="50" cy="50" r="28"/><circle cx="50" cy="50" r="3.4" fill="currentColor" stroke="none"/>
+              <line x1="50" y1="0" x2="50" y2="26"/><line x1="50" y1="74" x2="50" y2="100"/>
+              <line x1="0" y1="50" x2="26" y2="50"/><line x1="74" y1="50" x2="100" y2="50"/>
+            </svg>
+          </div>
+          <h3>Technical Expertise &amp; Guidance</h3>
+          <p>Helping organisations navigate complex technologies through specialist knowledge and practical support.</p>
+        </article>
+
+        <article class="hs__panel">
+          <div class="hs__panel-top">
+            <span class="hs__idx">03</span>
+            <svg class="hs__art" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true">
+              <rect x="6"  y="64" width="14" height="30"/>
+              <rect x="28" y="48" width="14" height="46"/>
+              <rect x="50" y="30" width="14" height="64"/>
+              <rect x="72" y="6"  width="14" height="88"/>
+            </svg>
+          </div>
+          <h3>Innovation &amp; Progress</h3>
+          <p>Introducing innovative products and solutions that contribute to scientific advancement and improved outcomes.</p>
+        </article>
+
+        <article class="hs__panel">
+          <div class="hs__panel-top">
+            <span class="hs__idx">04</span>
+            <svg class="hs__art" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true">
+              <circle cx="36" cy="50" r="30"/><circle cx="64" cy="50" r="30"/>
+            </svg>
+          </div>
+          <h3>Long-Term Partnership</h3>
+          <p>Working alongside clients as a dependable partner, providing ongoing support throughout every stage of growth.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PRODUCTS — sticky card deck ============ -->
+  <section class="products" id="products">
+    <header class="products__head" data-reveal>
+      <div>
+        <span class="products__label">(02) — Products</span>
+        <h2>Instruments that<br>set the standard<em>.</em></h2>
+      </div>
+      <p class="products__intro">A curated portfolio of analysers, liquid handlers and pre-analytical systems from the world's leading manufacturers.</p>
+    </header>
+
+    <div class="pcards" id="pcards">
+
+      <article class="pcard">
+        <div class="pcard__info">
+          <div class="pcard__top">
+            <span class="pcard__idx">P.01</span>
+            <span class="pcard__cat">Immunoassay</span>
+          </div>
+          <h3 class="pcard__name">Chorus Evo</h3>
+          <p class="pcard__desc">Fully automated immunoassay processing with on-board touchscreen control — single-test flexibility with walk-away simplicity.</p>
+          <ul class="pcard__specs">
+            <li>Automated processing</li>
+            <li>Touchscreen control</li>
+            <li>Single-test cartridges</li>
+          </ul>
+          <div class="pcard__actions">
+            <a href="#contact" class="el-btn el-btn--accent">Request a Quote <span class="el-dot" aria-hidden="true">●</span></a>
+          </div>
+        </div>
+        <div class="pcard__media">
+          <span class="pcard__ph">P.01 — CHORUS EVO</span>
+          <img src="assets/products/product-01.jpg" alt="DIESSE Chorus Evo immunoassay analyser" loading="lazy" onerror="this.style.display='none'">
+          <video class="pcard__video" muted loop playsinline preload="metadata" aria-label="Chorus Evo rotating 3D view">
+            <source src="assets/products/product-01.mp4" type="video/mp4">
+          </video>
+        </div>
+      </article>
+
+      <article class="pcard">
+        <div class="pcard__info">
+          <div class="pcard__top">
+            <span class="pcard__idx">P.02</span>
+            <span class="pcard__cat">Liquid Handling</span>
+          </div>
+          <h3 class="pcard__name">Automated Liquid Handler</h3>
+          <p class="pcard__desc">Multi-channel precision pipetting for high-throughput sample preparation — accuracy at microlitre scale, plate after plate.</p>
+          <ul class="pcard__specs">
+            <li>Multi-channel head</li>
+            <li>96-well workflows</li>
+            <li>High throughput</li>
+          </ul>
+          <div class="pcard__actions">
+            <a href="#contact" class="el-btn el-btn--accent">Request a Quote <span class="el-dot" aria-hidden="true">●</span></a>
+          </div>
+        </div>
+        <div class="pcard__media">
+          <span class="pcard__ph">P.02 — LIQUID HANDLER</span>
+          <img src="assets/products/product-02.jpg" alt="Automated multi-channel pipetting system over a 96-well plate" loading="lazy" onerror="this.style.display='none'">
+          <video class="pcard__video" muted loop playsinline preload="metadata" aria-label="Liquid handler rotating 3D view">
+            <source src="assets/products/product-02.mp4" type="video/mp4">
+          </video>
+        </div>
+      </article>
+
+      <article class="pcard">
+        <div class="pcard__info">
+          <div class="pcard__top">
+            <span class="pcard__idx">P.03</span>
+            <span class="pcard__cat">Pre-Analytics</span>
+          </div>
+          <h3 class="pcard__name">PKL Sample Processor</h3>
+          <p class="pcard__desc">Robotic sample preparation with an integrated carousel — standardised pre-analytical workflows under a signature dome.</p>
+          <ul class="pcard__specs">
+            <li>Robotic arm</li>
+            <li>Integrated carousel</li>
+            <li>Standardised prep</li>
+          </ul>
+          <div class="pcard__actions">
+            <a href="#contact" class="el-btn el-btn--accent">Request a Quote <span class="el-dot" aria-hidden="true">●</span></a>
+          </div>
+        </div>
+        <div class="pcard__media">
+          <span class="pcard__ph">P.03 — PKL PROCESSOR</span>
+          <img src="assets/products/product-03.jpg" alt="HTC PKL robotic sample processor with blue dome open" loading="lazy" onerror="this.style.display='none'">
+          <video class="pcard__video" muted loop playsinline preload="metadata" aria-label="PKL sample processor rotating 3D view">
+            <source src="assets/products/product-03.mp4" type="video/mp4">
+          </video>
+        </div>
+      </article>
+
+      <article class="pcard">
+        <div class="pcard__info">
+          <div class="pcard__top">
+            <span class="pcard__idx">P.04</span>
+            <span class="pcard__cat">Clinical Chemistry</span>
+          </div>
+          <h3 class="pcard__name">BS-1000M</h3>
+          <p class="pcard__desc">High-volume clinical chemistry analysis for core laboratories — up to 1,000 photometric tests per hour, around the clock.</p>
+          <ul class="pcard__specs">
+            <li>1,000 tests / hour</li>
+            <li>Core-lab capacity</li>
+            <li>Continuous loading</li>
+          </ul>
+          <div class="pcard__actions">
+            <a href="#contact" class="el-btn el-btn--accent">Request a Quote <span class="el-dot" aria-hidden="true">●</span></a>
+          </div>
+        </div>
+        <div class="pcard__media">
+          <span class="pcard__ph">P.04 — BS-1000M</span>
+          <img src="assets/products/product-04.jpg" alt="Mindray BS-1000M clinical chemistry analyser" loading="lazy" onerror="this.style.display='none'">
+          <video class="pcard__video" muted loop playsinline preload="metadata" aria-label="BS-1000M rotating 3D view">
+            <source src="assets/products/product-04.mp4" type="video/mp4">
+          </video>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ============ STATS ============ -->
+  <section class="stats">
+    <div class="stats__grid">
+      <div class="stats__cell" data-reveal>
+        <span class="stats__num"><span data-count="312">0</span></span>
+        <span class="stats__label">Partner laboratories</span>
+      </div>
+      <div class="stats__cell" data-reveal style="--d:.08s">
+        <span class="stats__num"><span data-count="1284">0</span></span>
+        <span class="stats__label">Instruments deployed</span>
+      </div>
+      <div class="stats__cell" data-reveal style="--d:.16s">
+        <span class="stats__num"><span data-count="40">0</span>+</span>
+        <span class="stats__label">Global manufacturers</span>
+      </div>
+      <div class="stats__cell" data-reveal style="--d:.24s">
+        <span class="stats__num"><span data-count="24">0</span>/7</span>
+        <span class="stats__label">Technical support</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ VALUES ============ -->
+  <section class="values" id="values">
+    <header class="values__head" data-reveal>
+      <span class="values__label">(03) — Core Values</span>
+      <h2>What we<br>stand for<em>.</em></h2>
+    </header>
+    <ul class="values__list">
+      <li class="vrow" data-reveal>
+        <span class="vrow__idx">01</span>
+        <h3>Knowledge</h3>
+        <p>Science advances through understanding. We expand our expertise to help clients navigate complex technologies.</p>
+        <span class="vrow__arrow" aria-hidden="true">→</span>
+      </li>
+      <li class="vrow" data-reveal style="--d:.06s">
+        <span class="vrow__idx">02</span>
+        <h3>Precision</h3>
+        <p>Accuracy and reliability are essential in every environment we support — discipline, detail, technical excellence.</p>
+        <span class="vrow__arrow" aria-hidden="true">→</span>
+      </li>
+      <li class="vrow" data-reveal style="--d:.12s">
+        <span class="vrow__idx">03</span>
+        <h3>Partnership</h3>
+        <p>Long-term relationships with clients, manufacturers and stakeholders, built on collaboration and shared success.</p>
+        <span class="vrow__arrow" aria-hidden="true">→</span>
+      </li>
+      <li class="vrow" data-reveal style="--d:.18s">
+        <span class="vrow__idx">04</span>
+        <h3>Progress</h3>
+        <p>Innovation drives meaningful change. We embrace technologies that contribute to scientific advancement.</p>
+        <span class="vrow__arrow" aria-hidden="true">→</span>
+      </li>
+    </ul>
+  </section>
+
+  <!-- ============ VISION — scroll-fill quote ============ -->
+  <section class="fill" id="vision">
+    <div class="fill__pin">
+      <span class="fill__label">(04) — Vision</span>
+      <p class="fill__text" id="fill-text">To become the trusted scientific partner connecting healthcare, research, and laboratory communities with the technologies that advance progress.</p>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="faqs" id="faq">
+    <div class="faqs__grid">
+      <div class="faqs__side">
+        <span class="faqs__label" data-reveal>(05) — FAQ</span>
+        <h2 data-reveal style="--d:.08s">Questions,<br>answered<em>.</em></h2>
+        <div class="faqs__big" aria-hidden="true" data-reveal style="--d:.16s">
+          <span class="faqs__big-num" id="faq-big-num">01</span>
+          <span class="faqs__big-total">/ 06</span>
+        </div>
+        <a href="#contact" class="faqs__more" data-reveal style="--d:.24s">Ask us anything else →</a>
+      </div>
+
+      <div class="faqs__list" id="faq-list">
+        <div class="faq is-open" data-reveal>
+          <button class="faq__q" aria-expanded="true" aria-controls="faq-a1" id="faq-q1">
+            <span class="faq__idx">Q.01</span>
+            <span class="faq__text">Which manufacturers do you represent?</span>
+            <span class="faq__icon" aria-hidden="true"><i></i><i></i></span>
+          </button>
+          <div class="faq__a" id="faq-a1" role="region" aria-labelledby="faq-q1">
+            <div class="faq__a-inner">
+              <p>We partner with more than 40 global manufacturers across clinical chemistry, immunoassay, haematology, microbiology and pre-analytics — including the instruments you see in our portfolio. Every partnership is selected for proven reliability and long-term support.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq" data-reveal style="--d:.05s">
+          <button class="faq__q" aria-expanded="false" aria-controls="faq-a2" id="faq-q2">
+            <span class="faq__idx">Q.02</span>
+            <span class="faq__text">Do you provide installation and training?</span>
+            <span class="faq__icon" aria-hidden="true"><i></i><i></i></span>
+          </button>
+          <div class="faq__a" id="faq-a2" role="region" aria-labelledby="faq-q2">
+            <div class="faq__a-inner">
+              <p>Yes. Our certified engineers handle delivery, installation, calibration and validation — and we train your staff on-site until they operate every instrument with confidence. Go-live is a milestone we reach together.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq" data-reveal style="--d:.1s">
+          <button class="faq__q" aria-expanded="false" aria-controls="faq-a3" id="faq-q3">
+            <span class="faq__idx">Q.03</span>
+            <span class="faq__text">What does ongoing service look like?</span>
+            <span class="faq__icon" aria-hidden="true"><i></i><i></i></span>
+          </button>
+          <div class="faq__a" id="faq-a3" role="region" aria-labelledby="faq-q3">
+            <div class="faq__a-inner">
+              <p>24/7 technical support, preventive maintenance schedules, guaranteed response times and genuine spare parts. Our goal is simple: maximum uptime for your laboratory, with issues resolved before they interrupt your workflow.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq" data-reveal style="--d:.15s">
+          <button class="faq__q" aria-expanded="false" aria-controls="faq-a4" id="faq-q4">
+            <span class="faq__idx">Q.04</span>
+            <span class="faq__text">Can you help us choose the right instrument?</span>
+            <span class="faq__icon" aria-hidden="true"><i></i><i></i></span>
+          </button>
+          <div class="faq__a" id="faq-a4" role="region" aria-labelledby="faq-q4">
+            <div class="faq__a-inner">
+              <p>That's exactly what we do best. We assess your workload, throughput, space and budget, then recommend the configuration that fits — not the biggest one. Independent, consultative guidance is the foundation of every partnership.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq" data-reveal style="--d:.2s">
+          <button class="faq__q" aria-expanded="false" aria-controls="faq-a5" id="faq-q5">
+            <span class="faq__idx">Q.05</span>
+            <span class="faq__text">Do you supply reagents and consumables?</span>
+            <span class="faq__icon" aria-hidden="true"><i></i><i></i></span>
+          </button>
+          <div class="faq__a" id="faq-a5" role="region" aria-labelledby="faq-q5">
+            <div class="faq__a-inner">
+              <p>Yes — continuous supply programmes with stock monitoring, automatic reordering and cold-chain logistics. Your reagents arrive before you run low, batch-tracked and ready for validation.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq" data-reveal style="--d:.25s">
+          <button class="faq__q" aria-expanded="false" aria-controls="faq-a6" id="faq-q6">
+            <span class="faq__idx">Q.06</span>
+            <span class="faq__text">How do we start working with Elincou?</span>
+            <span class="faq__icon" aria-hidden="true"><i></i><i></i></span>
+          </button>
+          <div class="faq__a" id="faq-a6" role="region" aria-labelledby="faq-q6">
+            <div class="faq__a-inner">
+              <p>Start a conversation. Tell us about your laboratory and its goals, and we'll arrange a consultation — at your site or ours. From first meeting to first result, you'll have a dedicated point of contact.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA ============ -->
+  <section class="cta" id="contact">
+    <div class="cta__content">
+      <span class="cta__label" data-reveal>(06) — Contact</span>
+      <h2 class="cta__title" data-reveal style="--d:.08s">Let's advance,<br>together<em>.</em></h2>
+      <p class="cta__sub" data-reveal style="--d:.16s">Talk to our specialists about instruments, reagents, service and long-term partnership.</p>
+      <div data-reveal style="--d:.24s">
+        <a href="mailto:hello@elincou.com" class="el-btn el-btn--primary el-btn--lg">Contact Us <span class="el-dot" aria-hidden="true">●</span></a>
+      </div>
+    </div>
+    <div class="el-spectrum cta__spectrum" aria-hidden="true">
+      <i style="height:10%"></i><i style="height:16%"></i>
+      <i style="height:24%"></i><i style="height:30%"></i>
+      <i style="height:38%"></i><i style="height:44%"></i>
+      <i style="height:52%"></i><i style="height:58%"></i>
+      <i style="height:66%"></i><i style="height:72%"></i>
+      <i style="height:80%"></i><i style="height:86%"></i>
+      <i style="height:94%"></i><i style="height:100%"></i>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-foot">
+  <div class="site-foot__meta">
+    <div>
+      <span class="el-meta-label">Contact</span>
+      <p><a href="mailto:hello@elincou.com">hello@elincou.com</a></p>
+    </div>
+    <div>
+      <span class="el-meta-label">Industry</span>
+      <p>Scientific Equipment &amp;<br>Healthcare Technologies</p>
+    </div>
+    <div>
+      <span class="el-meta-label">Resources</span>
+      <p><a href="index.html">Design System ↗</a></p>
+    </div>
+  </div>
+  <div class="site-foot__wordmark" id="foot-wordmark" aria-hidden="true">
+    <span>E</span><span>l</span><span>i</span><span>n</span><span>c</span><span>o</span><span>u</span>
+  </div>
+  <div class="site-foot__bottom">
+    <span>© 2026 Elincou Diagnostics</span>
+    <span>Advancing diagnostics together</span>
+    <a href="#top">Back to top ↑</a>
+  </div>
+</footer>
+
+<script src="js/home.js?v=7"></script>
+</body>
+</html>

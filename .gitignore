@@ -1,0 +1,13 @@
+# Raw source dump (product-01.mp4 is the canonical copy used by the site)
+assets/products/hf_*.mp4
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+*.log
+
+# Dependency dirs (none yet, but future-proofing)
+node_modules/
+
+# Claude local machine settings
+.claude/settings.local.json

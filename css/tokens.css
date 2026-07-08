@@ -1,0 +1,96 @@
+/* ==========================================================================
+   Elincou Design Tokens — v1.0
+   Source: Elincou Brand Guidelines v1.0 (Avocadots Design Studio, 2026)
+   ========================================================================== */
+
+:root {
+  /* ------ Colour · Primary palette ------ */
+  --el-white:          #FFFFFF;  /* White        · RGB 255,255,255 · CMYK 0,0,0,0   */
+  --el-ghost-white:    #F4F4F9;  /* Ghost White  · RGB 244,244,249 · CMYK 2,2,0,2   */
+  --el-alabaster:      #E8E7E4;  /* Alabaster Grey · RGB 232,231,228 · CMYK 0,0,2,9 */
+  --el-grey-olive:     #999999;  /* Grey Olive   · RGB 153,153,153 · CMYK 0,0,0,40  */
+  --el-onyx:           #0E0E0E;  /* Onyx         · RGB 14,14,14    · CMYK 0,0,0,95  */
+
+  /* ------ Colour · Extended palette ------ */
+  --el-blue:           #3777FF;  /* Crayola Blue · RGB 55,119,255  · CMYK 78,53,0,90 */
+  --el-emerald:        #57BB78;  /* Emerald      · RGB 87,187,120  · CMYK 53,0,36,27 */
+  --el-mustard:        #FFE156;  /* Mustard      · RGB 255,225,86  · CMYK 0,12,66,0  */
+
+  /* ------ Colour · Semantic aliases ------ */
+  --el-bg:             var(--el-ghost-white);
+  --el-surface:        var(--el-white);
+  --el-surface-alt:    var(--el-alabaster);
+  --el-text:           var(--el-onyx);
+  --el-text-muted:     #5F5F5F;   /* Onyx tint — meets AA on light surfaces */
+  --el-text-subtle:    var(--el-grey-olive);
+  --el-border:         var(--el-alabaster);
+  --el-border-strong:  #D2D1CD;
+  --el-action:         var(--el-onyx);
+  --el-accent:         var(--el-blue);
+  --el-success:        var(--el-emerald);
+  --el-warning:        var(--el-mustard);
+  --el-focus-ring:     var(--el-blue);
+
+  /* ------ Typography ------ */
+  --el-font-family:    'Gothic A1', -apple-system, 'Segoe UI', sans-serif;
+  --el-weight-light:    300;   /* Body copy            */
+  --el-weight-regular:  400;   /* Headings, UI default */
+  --el-weight-semibold: 600;   /* Subheadings, emphasis, buttons */
+
+  /* Type scale — 1.250 major third, 16px base */
+  --el-text-xs:    0.75rem;    /* 12px — captions, overlines   */
+  --el-text-sm:    0.875rem;   /* 14px — secondary UI text     */
+  --el-text-base:  1rem;       /* 16px — body                  */
+  --el-text-lg:    1.25rem;    /* 20px — lead paragraph        */
+  --el-text-xl:    1.5625rem;  /* 25px — H3                    */
+  --el-text-2xl:   1.9375rem;  /* 31px — H2                    */
+  --el-text-3xl:   2.4375rem;  /* 39px — H1                    */
+  --el-text-4xl:   3.0625rem;  /* 49px — Display               */
+  --el-text-5xl:   3.8125rem;  /* 61px — Hero                  */
+
+  --el-leading-tight:  1.15;   /* Display / headings */
+  --el-leading-snug:   1.35;   /* Subheadings        */
+  --el-leading-body:   1.65;   /* Body copy          */
+
+  --el-tracking-tight: -0.02em; /* Large headings  */
+  --el-tracking-wide:   0.12em; /* Overlines, tags */
+
+  /* ------ Spacing — 4px base ------ */
+  --el-space-1:  0.25rem;   /*  4px */
+  --el-space-2:  0.5rem;    /*  8px */
+  --el-space-3:  0.75rem;   /* 12px */
+  --el-space-4:  1rem;      /* 16px */
+  --el-space-5:  1.5rem;    /* 24px */
+  --el-space-6:  2rem;      /* 32px */
+  --el-space-7:  3rem;      /* 48px */
+  --el-space-8:  4rem;      /* 64px */
+  --el-space-9:  6rem;      /* 96px */
+  --el-space-10: 8rem;      /* 128px */
+
+  /* ------ Radii — sharp system, no rounded corners ------ */
+  --el-radius-sm:   0;
+  --el-radius-md:   0;
+  --el-radius-lg:   0;
+  --el-radius-full: 0;
+
+  /* ------ Rules / hairlines — flat editorial, no elevation ------ */
+  --el-line:        rgba(14, 14, 14, 0.16);  /* hairline dividers      */
+  --el-line-strong: var(--el-onyx);          /* section rules          */
+  --el-shadow-sm: none;
+  --el-shadow-md: none;
+  --el-shadow-lg: none;
+
+  /* ------ Fluid display sizes ------ */
+  --el-text-hero: clamp(4rem, 12.5vw, 12rem);     /* Hero masthead    */
+  --el-text-huge: clamp(2.25rem, 4.5vw, 3.75rem); /* Section titles   */
+  --el-font-mono: ui-monospace, 'Cascadia Code', Consolas, 'Courier New', monospace;
+
+  /* ------ Motion ------ */
+  --el-ease:        cubic-bezier(0.25, 0.1, 0.25, 1);
+  --el-duration-fast: 120ms;
+  --el-duration:      200ms;
+  --el-duration-slow: 350ms;
+
+  /* ------ Logo ------ */
+  --el-logo-min-size: 20px;  /* Never render any identity element smaller */
+}
