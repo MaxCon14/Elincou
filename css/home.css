@@ -599,8 +599,9 @@ body.is-loaded .hero__spectrum i { transform: none; }
 
 .cta {
   position: relative;
-  background: var(--el-onyx);
-  color: var(--el-white);
+  background: var(--el-ghost-white);
+  color: var(--el-text);
+  border-top: 1px solid var(--el-line-strong);
   overflow: hidden;
 }
 .cta__inner {
@@ -614,8 +615,8 @@ body.is-loaded .hero__spectrum i { transform: none; }
   display: inline-flex; align-items: center; gap: 10px;
   font-family: var(--el-font-mono); font-size: 10px;
   letter-spacing: 0.18em; text-transform: uppercase;
-  color: rgba(255,255,255,0.72);
-  border: 1px solid rgba(255,255,255,0.2);
+  color: var(--el-text-muted);
+  border: 1px solid var(--el-border-strong);
   padding: 8px 14px;
   margin-bottom: var(--el-space-6);
 }
@@ -653,7 +654,7 @@ body.is-loaded .hero__spectrum i { transform: none; }
 
 .cta__sub {
   max-width: 46ch;
-  color: rgba(255,255,255,0.6);
+  color: var(--el-text-muted);
   font-size: var(--el-text-base); line-height: 1.6;
   font-weight: var(--el-weight-light);
   margin: 0 0 var(--el-space-8);
@@ -662,7 +663,7 @@ body.is-loaded .hero__spectrum i { transform: none; }
 /* Oversized interactive email link */
 .cta__mail {
   display: inline-flex; align-items: center; gap: clamp(18px, 2.4vw, 40px);
-  text-decoration: none; color: var(--el-white);
+  text-decoration: none; color: var(--el-text);
   font-size: clamp(1.65rem, 5vw, 3.6rem);
   font-weight: var(--el-weight-regular); letter-spacing: -0.02em;
   transition: color 0.4s var(--el-exp, var(--exp));
@@ -690,15 +691,15 @@ body.is-loaded .hero__spectrum i { transform: none; }
 /* Editorial contact-detail grid */
 .cta__meta {
   display: grid; grid-template-columns: repeat(3, minmax(0, 1fr));
-  border-top: 1px solid rgba(255,255,255,0.16);
-  border-left: 1px solid rgba(255,255,255,0.16);
+  border-top: 1px solid var(--el-line);
+  border-left: 1px solid var(--el-line);
   margin-top: clamp(56px, 9vh, 104px);
   max-width: 920px;
 }
 .cta__meta-col {
   padding: var(--el-space-5);
-  border-right: 1px solid rgba(255,255,255,0.16);
-  border-bottom: 1px solid rgba(255,255,255,0.16);
+  border-right: 1px solid var(--el-line);
+  border-bottom: 1px solid var(--el-line);
 }
 .cta__meta-label {
   display: block;
@@ -707,7 +708,7 @@ body.is-loaded .hero__spectrum i { transform: none; }
   color: var(--el-grey-olive);
   margin-bottom: var(--el-space-3);
 }
-.cta__meta-val { font-size: var(--el-text-sm); color: var(--el-white); }
+.cta__meta-val { font-size: var(--el-text-sm); color: var(--el-text); }
 
 .cta__spectrum { height: 24vh; min-height: 160px; gap: 0; }
 
