@@ -481,8 +481,14 @@ body.is-loaded .hero__spectrum i { transform: none; }
   transform: translateY(-50%);
   width: min(52vw, 720px); height: auto;
   color: #E3E2DE;
-  animation: el-spin 90s linear infinite;
+  transform-origin: center;
+  animation: fill-globe-spin 60s linear infinite;
   z-index: 0;
+}
+/* Spin in place — keeps the vertical centering while rotating */
+@keyframes fill-globe-spin {
+  from { transform: translateY(-50%) rotate(0deg); }
+  to   { transform: translateY(-50%) rotate(360deg); }
 }
 
 .fill__head {
