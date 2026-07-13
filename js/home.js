@@ -81,24 +81,31 @@
   }, { threshold: 0.15, rootMargin: '0px 0px -8% 0px' });
   document.querySelectorAll('[data-reveal]').forEach((el) => revealObs.observe(el));
 
-  /* ---------- Contact spectrum — bars rise on reach ---------- */
-  const ctaSpectrum = document.querySelector('.cta__spectrum');
-  if (ctaSpectrum) {
-    const bars = [...ctaSpectrum.querySelectorAll('i')];
-    bars.forEach((b, i) => { b.style.transitionDelay = (0.05 + i * 0.045).toFixed(3) + 's'; });
-    if (RM) {
-      ctaSpectrum.classList.add('is-lit');
-    } else {
-      const specObs = new IntersectionObserver((entries) => {
-        entries.forEach((en) => {
-          if (en.isIntersecting) {
-            en.target.classList.add('is-lit');
-            specObs.unobserve(en.target);
-          }
-        });
-      }, { threshold: 0.2 });
-      specObs.observe(ctaSpectrum);
-    }
+  /* ---------- Contact icon video — fade in, play only in view ---------- */
+  const ctaVideo = document.querySelector('.cta__video');
+  if (ctaVideo) {
+    const src = ctaVideo.querySelector('source');
+    const drop = () => { ctaVideo.remove(); };
+    ctaVideo.addEventListener('error', drop);
+    if (src) src.addEventListener('error', drop);
+    ctaVideo.addEventListener('loadeddata', () => ctaVideo.classList.add('is-ready'));
+
+    let ctaInView = false;
+    const ctaVidObs = new IntersectionObserver((entries) => {
+      entries.forEach((en) => {
+        if (!ctaVideo.isConnected) return;
+        ctaInView = en.isIntersecting;
+        if (en.isIntersecting && !RM) ctaVideo.play().catch(() => {});
+        else ctaVideo.pause();
+      });
+    }, { threshold: 0.2 });
+    ctaVidObs.observe(ctaVideo);
+
+    document.addEventListener('visibilitychange', () => {
+      if (document.visibilityState === 'visible' && ctaInView && !RM && ctaVideo.isConnected) {
+        ctaVideo.play().catch(() => {});
+      }
+    });
   }
 
   /* ---------- Horizontal pinned scroll ---------- */
