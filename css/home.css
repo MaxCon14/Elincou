@@ -94,13 +94,10 @@ body.is-loaded .site-head.is-hidden { transform: translateY(-110%); transition-d
 
 /* Figma spec — boxed nav on white, no borders, sentence case */
 .site-head .el-appnav__brand {
-  border: none; background: var(--el-ghost-white); padding: 10px 16px;
+  border: none; background: transparent; padding: 0;
   color: var(--el-text); text-decoration: none;
 }
-.site-head .el-appnav__brand-name small { color: var(--el-text-muted); }
-.site-head .el-appnav__brand svg { width: 34px; height: 34px; }
-.site-head .el-appnav__brand-name { font-size: 13px; }
-.site-head .el-appnav__brand-name small { font-size: 11px; }
+.site-head__logo { display: block; height: 34px; width: auto; }
 .site-head .el-appnav__links { gap: 10px; }
 .site-head .el-appnav__links a {
   border: none;
