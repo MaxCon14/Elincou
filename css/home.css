@@ -273,12 +273,12 @@ body.is-loaded .hero__spectrum i { transform: none; }
   margin-bottom: auto;
 }
 .hs__idx {
-  font-family: var(--el-font-mono);
-  font-size: clamp(3rem, 6vw, 5.5rem); font-weight: 300;
-  line-height: 1; color: var(--el-text);
+  font-family: var(--el-font-family);
+  font-size: clamp(3rem, 6vw, 5.5rem); font-weight: var(--el-weight-light);
+  line-height: 1; letter-spacing: -0.02em; color: var(--el-text);
 }
 .hs__art { width: clamp(120px, 16vw, 220px); height: auto; color: #C9C8C4; }
-.hs__panel:hover .hs__art { color: var(--el-blue); transition: color 0.5s var(--exp); }
+.hs__panel:hover .hs__art { color: var(--el-emerald); transition: color 0.5s var(--exp); }
 .hs__panel h3 {
   font-size: clamp(1.9rem, 3.6vw, 3.2rem);
   font-weight: var(--el-weight-regular);
