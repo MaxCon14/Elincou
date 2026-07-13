@@ -508,7 +508,7 @@ body.is-loaded .hero__spectrum i { transform: none; }
 }
 .fill__text .fw { color: #D2D1CD; transition: color 0.35s linear; }
 .fill__text .fw.on { color: var(--el-onyx); }
-.fill__text .fw--hl.on { color: var(--el-blue); }
+.fill__text .fw--hl.on { color: var(--el-emerald); }
 
 .fill__bar {
   position: relative; z-index: 1;
@@ -821,7 +821,7 @@ body.is-loaded .hero__spectrum i { transform: none; }
   }
   .fill { height: auto; }
   .fill__text .fw { color: var(--el-onyx); }
-  .fill__text .fw--hl { color: var(--el-blue); }
+  .fill__text .fw--hl { color: var(--el-emerald); }
   .fill__globe { animation: none; }
   .fill__bar i { transform: scaleX(1); }
   .hs { height: auto; }
