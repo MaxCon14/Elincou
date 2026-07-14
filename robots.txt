@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://maxcon14.github.io/Elincou/sitemap.xml
